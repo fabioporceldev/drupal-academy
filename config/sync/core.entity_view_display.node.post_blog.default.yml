@@ -1,0 +1,67 @@
+uuid: 9598a1d5-7b15-4aa3-9262-3d019fff49c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.post_blog.field_archvivo
+    - field.field.node.post_blog.field_body
+    - field.field.node.post_blog.field_categoria_de_post
+    - field.field.node.post_blog.field_fecha_de_publicacion
+    - field.field.node.post_blog.field_referencia_a_entidad
+    - node.type.post_blog
+  module:
+    - datetime
+    - file
+    - text
+    - user
+id: node.post_blog.default
+targetEntityType: node
+bundle: post_blog
+mode: default
+content:
+  field_archvivo:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_categoria_de_post:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_fecha_de_publicacion:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_referencia_a_entidad:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

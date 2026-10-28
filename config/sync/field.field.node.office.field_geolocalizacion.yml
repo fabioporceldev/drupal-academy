@@ -1,0 +1,21 @@
+uuid: bfa87686-eff2-4eaa-be6d-0457553a379a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_geolocalizacion
+    - node.type.office
+  module:
+    - geofield
+id: node.office.field_geolocalizacion
+field_name: field_geolocalizacion
+entity_type: node
+bundle: office
+label: Geolocalización
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

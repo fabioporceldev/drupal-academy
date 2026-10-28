@@ -1,0 +1,9 @@
+uuid: 7e8214b4-3eba-4d1b-a514-8ed2c0e4d904
+langcode: en
+status: true
+dependencies: {  }
+name: 'Tipos de Recursos Didacticos'
+vid: tipos_de_recursos_didacticos
+description: null
+weight: 0
+new_revision: true

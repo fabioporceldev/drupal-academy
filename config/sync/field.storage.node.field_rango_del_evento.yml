@@ -1,0 +1,19 @@
+uuid: 300562de-5fa0-4b61-8afe-31e073b1155f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - smart_date
+id: node.field_rango_del_evento
+field_name: field_rango_del_evento
+entity_type: node
+type: smartdate
+settings: {  }
+module: smart_date
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

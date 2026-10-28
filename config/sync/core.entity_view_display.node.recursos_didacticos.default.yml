@@ -1,0 +1,67 @@
+uuid: e53628a8-e582-4859-b779-19b15d61aab1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.recursos_didacticos.field_archvivo
+    - field.field.node.recursos_didacticos.field_body
+    - field.field.node.recursos_didacticos.field_fecha_de_publicacion
+    - field.field.node.recursos_didacticos.field_referencia_a_entidad
+    - field.field.node.recursos_didacticos.field_tipo_de_recursos_didactico
+    - node.type.recursos_didacticos
+  module:
+    - datetime
+    - file
+    - text
+    - user
+id: node.recursos_didacticos.default
+targetEntityType: node
+bundle: recursos_didacticos
+mode: default
+content:
+  field_archvivo:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_fecha_de_publicacion:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_referencia_a_entidad:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_tipo_de_recursos_didactico:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

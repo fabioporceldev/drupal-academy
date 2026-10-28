@@ -1,0 +1,29 @@
+uuid: 03818440-cd25-4d0f-9fef-34c774b8129b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_referencia_a_entidad
+    - node.type.post_blog
+    - taxonomy.vocabulary.listar_terminos
+id: node.post_blog.field_referencia_a_entidad
+field_name: field_referencia_a_entidad
+entity_type: node
+bundle: post_blog
+label: 'Referencia a entidad'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      listar_terminos: listar_terminos
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: listar_terminos
+field_type: entity_reference

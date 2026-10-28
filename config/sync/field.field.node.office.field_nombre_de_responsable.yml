@@ -1,0 +1,19 @@
+uuid: 6dcbd354-fd80-4bc2-9a8f-1d85bccc4217
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nombre_de_responsable
+    - node.type.office
+id: node.office.field_nombre_de_responsable
+field_name: field_nombre_de_responsable
+entity_type: node
+bundle: office
+label: 'Nombre de responsable'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

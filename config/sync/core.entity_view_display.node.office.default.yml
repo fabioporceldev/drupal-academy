@@ -1,0 +1,64 @@
+uuid: 6982726d-5874-42c1-bffa-2c1761013ee7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.office.field_body
+    - field.field.node.office.field_geolocalizacion
+    - field.field.node.office.field_nombre_de_responsable
+    - field.field.node.office.field_provincia
+    - field.field.node.office.field_titulo
+    - node.type.office
+  module:
+    - geofield
+    - text
+    - user
+id: node.office.default
+targetEntityType: node
+bundle: office
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_geolocalizacion:
+    type: geofield_default
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_nombre_de_responsable:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_provincia:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_titulo:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

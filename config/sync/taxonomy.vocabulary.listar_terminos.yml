@@ -1,0 +1,9 @@
+uuid: 5b554454-82e2-492c-a8b9-189c8efa6530
+langcode: en
+status: true
+dependencies: {  }
+name: 'Categoria de Post'
+vid: listar_terminos
+description: null
+weight: 0
+new_revision: true
