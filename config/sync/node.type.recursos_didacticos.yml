@@ -1,0 +1,18 @@
+uuid: 8be929b4-657f-4a70-8a24-4619e02bf205
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Recursos Didacticos'
+type: recursos_didacticos
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,54 @@
+uuid: 9e42f564-5f79-4722-9b82-bb9376af8cea
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - node.type.article
+    - node.type.evento_de_prueba
+    - node.type.page
+    - node.type.post_blog
+    - node.type.recursos_didacticos
+    - taxonomy.vocabulary.tecnologias
+  module:
+    - block_content
+    - node
+    - taxonomy
+id: editor_de_proyectos
+label: 'Editor de proyectos'
+weight: 4
+is_admin: false
+permissions:
+  - 'access block library'
+  - 'administer block content'
+  - 'administer block types'
+  - 'create article content'
+  - 'create basic block content'
+  - 'create evento_de_prueba content'
+  - 'create page content'
+  - 'create post_blog content'
+  - 'create recursos_didacticos content'
+  - 'create terms in tecnologias'
+  - 'delete any article content'
+  - 'delete any basic block content'
+  - 'delete any basic block content revisions'
+  - 'delete any evento_de_prueba content'
+  - 'delete any page content'
+  - 'delete any post_blog content'
+  - 'delete any recursos_didacticos content'
+  - 'delete own article content'
+  - 'edit any article content'
+  - 'edit any basic block content'
+  - 'edit any evento_de_prueba content'
+  - 'edit any page content'
+  - 'edit any post_blog content'
+  - 'edit terms in tecnologias'
+  - 'revert any basic block content revisions'
+  - 'revert term revisions in tecnologias'
+  - 'view any basic block content history'
+  - 'view article revisions'
+  - 'view evento_de_prueba revisions'
+  - 'view page revisions'
+  - 'view post_blog revisions'
+  - 'view term revisions in tecnologias'
+  - 'view unpublished block content'

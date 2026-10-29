@@ -1,0 +1,21 @@
+uuid: 5fa970ce-191f-4d7f-b56b-b1cdf29e184b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telefono
+    - node.type.evento_de_prueba
+  module:
+    - telephone
+id: node.evento_de_prueba.field_telefono
+field_name: field_telefono
+entity_type: node
+bundle: evento_de_prueba
+label: Telefono
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

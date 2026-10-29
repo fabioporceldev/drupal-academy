@@ -1,0 +1,29 @@
+uuid: 18e4ee62-ea3e-487e-ab3f-0ffa7a1443cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categoria_de_post
+    - node.type.post_blog
+    - taxonomy.vocabulary.listar_terminos
+id: node.post_blog.field_categoria_de_post
+field_name: field_categoria_de_post
+entity_type: node
+bundle: post_blog
+label: 'Categoria de Post'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      listar_terminos: listar_terminos
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

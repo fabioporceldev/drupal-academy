@@ -1,0 +1,84 @@
+uuid: 4cf25896-c8c2-4992-9cfd-628610115b3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.evento_de_prueba.field_rango_del_evento
+    - field.field.node.evento_de_prueba.field_telefono
+    - node.type.evento_de_prueba
+  module:
+    - path
+    - smart_date
+    - telephone
+id: node.evento_de_prueba.default
+targetEntityType: node
+bundle: evento_de_prueba
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_rango_del_evento:
+    type: smartdate_inline
+    weight: 121
+    region: content
+    settings:
+      modal: false
+      default_duration: 60
+      default_duration_increments: |-
+        30
+        60|1 hour
+        90
+        120|2 hours
+        custom
+      show_extra: false
+      hide_date: true
+      allday: true
+      remove_seconds: false
+      duration_overlay: true
+      separator: to
+    third_party_settings: {  }
+  field_telefono:
+    type: telephone_default
+    weight: 122
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

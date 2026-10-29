@@ -1,0 +1,14 @@
+uuid: 5a39b4bf-aa44-4b7d-b2b4-ab7f7c2459dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.editor_de_proyectos
+  module:
+    - user
+id: user_add_role_action.editor_de_proyectos
+label: 'Add the Editor de proyectos role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: editor_de_proyectos
